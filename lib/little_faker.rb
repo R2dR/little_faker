@@ -57,7 +57,7 @@ module Faker
   end
 end
   
-class Fake
+class Fake < Faker::Base
   include Faker::FakerMethodsDelegator
 
   class << Fake

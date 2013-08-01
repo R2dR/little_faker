@@ -20,7 +20,6 @@ shared_examples_for :faker_for do |mod|
   end
 end
 
-
 FAKER_MODULES = [
   Faker::Company, Faker::Name, Faker::PhoneNumber,
   Faker::Address, Faker::Lorem, Faker::Business,
@@ -33,8 +32,16 @@ describe Fake do
     FAKER_MODULES.each do |mod|
       it_behaves_like :responder_of, mod
     end
+    context "Faker::Base inherited methods" do
+      (Faker::Base.methods - Object.methods).each do |method_name|
+        it "recognizes '#{method_name}' method" do
+          Fake.respond_to?(method_name).should be_true
+        end
+      end
+    end
   end  
-
+  
+  
   describe ".faker_methods" do
     it "exists" do
       Fake.method(:faker_methods).should_not be_nil
