@@ -38,3 +38,7 @@ Add custom fakers to:
 end
 </pre>
 
+List all faker methods:
+
+<pre>$Fake.faker_methods
+</pre>
