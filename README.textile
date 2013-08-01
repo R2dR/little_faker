@@ -15,8 +15,26 @@ Add to Gemfile:
 <pre>gem 'little_faker'
 </pre>
 
+Require where needed:
+<pre>require 'fake'
+or
+require 'little_faker'
+</pre>
+
 h2. Usage
 
-Fake.email instead of Faker::Internet.email
+Examples:
 
+Faker::Internet.email     => Fake.email
+Faker::Internet.password  => Fake.password
+Faker::Name.first_name    => Fake.first_name
+etc.
+
+Add custom fakers to:
+<pre>class << Fake
+  def another_faker
+    ...
+  end
+end
+</pre>
 

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative '../lib/little_faker'
 
 shared_examples_for :responder_of do |mod|
   context "module #{mod.to_s}" do
