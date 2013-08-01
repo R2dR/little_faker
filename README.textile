@@ -1,0 +1,22 @@
+h1. Little Faker Gem
+
+Delegates access to Faker gem methods from single name space.
+
+h2. Dependencies
+
+Requirements:
+
+* Ruby 1.9 or greater
+* Faker gem
+
+h2. Setup
+
+Add to Gemfile:
+<pre>gem 'little_faker'
+</pre>
+
+h2. Usage
+
+Fake.email instead of Faker::Internet.email
+
+
