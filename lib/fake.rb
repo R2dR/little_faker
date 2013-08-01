@@ -61,13 +61,10 @@ class Fake < Faker::Base
   include Faker::FakerMethodsDelegator
 
   class << self
-    def password_of_size(size=12)
-      components, length = [], 0
-      begin
-        components << word
-        length += components.last.length
-      end while length < size
-      components.join[0,size]
+    def password_of_length(size=12)
+      words = []
+      words << word until words.inject(0){|len, a| len+a.size} >= size
+      words.join[0,size]
     end
   end
 end

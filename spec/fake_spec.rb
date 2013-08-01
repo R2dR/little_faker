@@ -71,5 +71,16 @@ describe Fake do
       Fake.email.should =~ /[\w.-_]+@[\w.-_]+/
     end
   end
+  
+  context "custom methods" do
+    describe ".password_of_length" do
+      it "defaults to length 12" do
+        Fake.password_of_length.length.should == 12
+      end
+      it "returns password of large length" do
+        Fake.password_of_length(100).length.should == 100
+      end
+    end
+  end
 end
 
