@@ -2,6 +2,7 @@ Gem::Specification.new do |s|
   s.name        = 'little_faker'
   s.version     = '0.9.1'
   s.date        = '2013-07-30'
+  s.license     = 'MIT'
   s.summary     = "Delegation interface for Faker gem"
   s.description = "Call Faker methods from one namespace, ie. Faker::Lorem.word => Fake.word"
   s.authors     = ["R2dR"]
