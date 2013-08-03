@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'little_faker'
-  s.version     = '0.9.1'
+  s.version     = '0.9.2'
   s.date        = '2013-07-30'
   s.license     = 'MIT'
   s.summary     = "Delegation interface for Faker gem"
