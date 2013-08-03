@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "Call Faker methods from one namespace, ie. Faker::Lorem.word => Fake.word"
   s.authors     = ["R2dR"]
   s.email       = 'github@r2dr.com'
-  s.files       = Dir['lib/**/*.rb']
+  s.files       = Dir['lib/**/*.rb', 'LICENSE', 'README.*']
   s.homepage    = 'http://github.com/r2dr/little_faker'
   s.add_dependency('faker', '>= 1.2.0')
   s.requirements << 'faker, v1.2.0 or greater'
