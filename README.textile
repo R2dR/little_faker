@@ -40,5 +40,5 @@ end
 
 List all faker methods:
 
-<pre>$Fake.faker_methods
+<pre>$ Fake.faker_methods
 </pre>
